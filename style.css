@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin: 20px 0 12px;
+    font-size: 20px;
+}
+
+.container {
+    width: 85%;
+    max-width: 1000px;
+    margin: 0 auto 40px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.block {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2b3a42;
+    text-align: center;
+}
+
+.top-img {
+    width: 100%;
+    height: 90px;
+    background-color: #62f230;
+    line-height: 90px;
+}
+
+.left-text {
+    width: 25%;
+    height: 380px;
+    background-color: #8f94f4;
+    line-height: 380px;
+}
+
+.right-img {
+    width: 75%;
+    height: 380px;
+    background-color: #ade1f5;
+    line-height: 380px;
+}
+
+.bottom-text {
+    width: 100%;
+    height: 90px;
+    background-color: #fff5b8;
+    line-height: 90px;
+}
+
+/* Завдання 1: Верстка за допомогою float */
+.float-layout .left-text,
+.float-layout .right-img {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Завдання 2: Верстка за допомогою Flex */
+.flex-layout {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-layout .block {
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
